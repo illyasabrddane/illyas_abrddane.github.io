@@ -3,50 +3,44 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.button {
-    position: relative;
-    background-color: #4CAF50;
+.btn {
     border: none;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.button:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
 
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+   
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
 </style>
 </head>
 <body>
 
-<h2>Animated Button - Ripple Effect</h2>
+<h1>Knoppen</h1>
+<button class="btn success">Terug naar hoofdpagina</button>
+ 
+    <a href= "index.html" class= "btn succes"</a>
 
-<button class="button">Een knop</button>
-<a href="index.html" class="button">Terug naar hoofdpagina</a>
-<a href="afbeelding.html" class="button">afbeelding</a>    
-<a href="themapagina.html" class="button">iets apart</a>        
+    <button class="btn info">Info</button>
+
+    <button class="btn warning">Warning</button>
+
+    <button class="btn danger">Danger</button>
+
+    <button class="btn default">Default</button>
 </body>
 </html>
