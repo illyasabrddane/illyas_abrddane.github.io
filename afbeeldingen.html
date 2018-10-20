@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+/* This stylesheet sets the width of all images to 100%: */
 img {
     width: 100%;
 }
@@ -9,13 +10,12 @@ img {
 </head>
 <body>
 
-<h2>Afbeeldingen</h2>
-<img src="https://www.google.be/search?q=bergen&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjlmJiFh5Xe
-AhWC-qQKHVvKByAQ_AUIDigB&biw=1242&bih=597#imgrc=QFwbkWaSQYl91M:" width="50%" height="50%">
-<img src="https://www.google.be/search?biw=1242&bih=597&tbm=isch&sa=1&ei=LSTLW739Hs-ZsAfHrY
-          74AQ&q=ruimte&oq=ruimte&gs_l=img.3..0l10.112335.113994.0.
-          114502.6.5.0.1.1.0.72.271.5.5.0....0...1c.1.64.img..0.6.276....0.kHmEBA-_220#imgrc=bGXhbhxfVzvHbM:"
-     width="50%" height="50%">
+<h2>Styling Images</h2>
+<p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to 100%.</p>
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
 
 </body>
 </html>
